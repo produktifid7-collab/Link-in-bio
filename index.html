@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <style>
         /* --- Reset & Base --- */
@@ -243,11 +243,10 @@
         </div>
         
         <div id="mainShare" class="share-dropdown" style="top: 70px; right: 20px;">
-            <a href="https://wa.me/?text=Cek ini: http://linkbio.com" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
-            <a href="https://www.tiktok.com/" target="_blank"><i class="fa-brands fa-tiktok"></i> TikTok</a>
-            <a href="mailto:?subject=Link Bio&body=Cek link ini http://linkbio.com"><i class="fa-solid fa-envelope"></i> Gmail</a>
-            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a>
-            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i> Facebook</a>
+            <a href="https://wa.me/?text=Cek ini: https://produktifid7-collab.github.io/Link-in-bio/" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+            <a href="mailto:?subject=Link Bio&body=Cek link ini https://produktifid7-collab.github.io/Link-in-bio/"><i class="fa-solid fa-envelope"></i> Gmail</a>
+            <a href="https://twitter.com/intent/tweet?text=Cek%20link%20bio%20keren%20ini!&url=https://produktifid7-collab.github.io/Link-in-bio/" target="_blank">
+                        <i class="fa-brands fa-x-twitter"></i> Twitter</a>
             <div onclick="copyLink()"><i class="fa-solid fa-link"></i> Salin Link</div>
         </div>
 
@@ -265,14 +264,14 @@
                     <a href="https://wa.me/?text=https://Lynk.id/produktifid" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
                     <a href="mailto:?subject=Cek Link Bio Ini&body=Halo, cek link menarik ini: https://Lynk.id/produktifid" target="_blank">
                         <i class="fa-solid fa-envelope"></i> Gmail</a>
-                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://Lynk.id/produktifid" target="_blank">
-                        <i class="fa-brands fa-facebook"></i> Facebook</a>
-                    <div onclick="copyLink()"><i class="fa-solid fa-link"></i> Salin Link</div>
+                    <a href="https://twitter.com/intent/tweet?text=Cek%20link%20bio%20ini!&url=https://Lynk.id/produktifid" target="_blank">
+                        <i class="fa-brands fa-x-twitter"></i> Twitter</a>
+                    <div onclick="copyCustomLink('https://Lynk.id/produktifid')"><i class="fa-solid fa-link"></i> Salin Link</div>
                 </div>
             </div>
 
             <div class="link-wrapper">
-                <a href="#" class="link-item">
+                <a href="https://wa.me/6287873667982" class="link-item">
                     <i class=""></i> <span>Order produk lainnya disini yaa</span>
                 </a>
                 <i class="fa-solid fa-ellipsis-vertical btn-more" onclick="toggleMenu(event, 'menu2')"></i>
@@ -311,6 +310,11 @@
 
         window.onclick = function() {
             document.querySelectorAll('.share-dropdown').forEach(m => m.classList.remove('active'));
+        }
+        function copyCustomLink(url) {
+        navigator.clipboard.writeText(url).then(() => {
+        alert("Link Produk berhasil disalin!");
+        });
         }
     </script>
 </body>
